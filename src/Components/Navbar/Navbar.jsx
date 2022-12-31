@@ -1,37 +1,25 @@
 import { Container, NavbarBrand, NavLink } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
+import { SiteLinks } from "../Links/SiteLinks";
 
-function BoilerPlateNavbar() {
+function SiteNavbar() {
     return (  
         <>
-            <Navbar className="bg-gradient-to-r from-purple-600 to-purple-400 text-white">
-                <Container>
-                    <Nav>
-                        <NavbarBrand href="" className="text-inherit hover:text-inherit">MarketResearchLite</NavbarBrand>
-                        <NavLink href="" className="text-inherit hover:text-inherit">Get Started</NavLink>
-                        <NavLink href="" className="text-inherit hover:text-inherit">Dashboard</NavLink>
-                        <NavLink href="" className="text-inherit hover:text-inherit">Data</NavLink>
-                    </Nav>
-                </Container>
+            <Navbar bg="dark" variant="dark" className="bg-gradient-to-r from-purple-600 to-purple-400">
+                <div className="ml-20">
+                    <Container>
+                        <Nav>
+                            <NavbarBrand href={ SiteLinks.homepage } >MarketResearchLite</NavbarBrand>
+                            <NavLink href="" className="ml-20 min-w-fit">Get Started</NavLink>
+                            <NavLink href="" className="ml-5 min-w-fit">Dashboard</NavLink>
+                            <NavLink href="" className="ml-5 min-w-fit">Data</NavLink>
+                        </Nav>
+                    </Container>
+                </div>
             </Navbar>
         </>
     );
 }
 
-// import Container from 'react-bootstrap/Container';
-// import Navbar from 'react-bootstrap/Navbar';
-
-// function BoilerPlateNavbar() {
-//   return (
-//     <Container>
-//       <Navbar expand="lg" variant="light" bg="light">
-//         <Container>
-//           <Navbar.Brand href="#">Navbar</Navbar.Brand>
-//         </Container>
-//       </Navbar>
-//     </Container>
-//   );
-// }
-
-export default BoilerPlateNavbar;
+export default SiteNavbar;
