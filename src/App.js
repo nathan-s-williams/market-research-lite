@@ -1,13 +1,12 @@
 import './index.css';
 import SiteNavbar from './Components/Navbar/Navbar';
+import HeroSection from './Components/HeroSection/HeroSection';
 
 function App() {
   return (
     <>
       <SiteNavbar />
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <HeroSection />
     </>
   );
 }

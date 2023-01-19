@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { SiteLinks } from "../Links/SiteLinks";
 
-function SiteNavbar() {
+const SiteNavbar = () => {
     return (  
         <>
             <Navbar bg="dark" variant="dark" className="bg-gradient-to-r from-purple-600 to-purple-400">
